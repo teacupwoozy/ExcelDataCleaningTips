@@ -1,4 +1,4 @@
 # Collections of Data Cleaning Tips
 
-##### A (likely) haphazrd complilation of data cleaning tips, tricks, tools
+##### A (likely) haphazard complilation of data cleaning tips, tricks, tools
 
