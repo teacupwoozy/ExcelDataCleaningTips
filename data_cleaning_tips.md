@@ -11,7 +11,7 @@ Regex Cheatsheet: https://www.rexegg.com/regex-quickstart.html
 
 ## iPython Magic
 %run: 
-%store: pass variables between two different notebooks. -r: Refresh all variables from store (overwrite current vals).  
+%store: pass variables between two different notebooks. -r: Refresh all variables from store (overwrite current vals). 
 %run: execute python code from .py files - this is well-documented behavior. Lesser known is the fact that it can also execute other jupyter notebooks, which can quite useful.  
 
 ## On Import
