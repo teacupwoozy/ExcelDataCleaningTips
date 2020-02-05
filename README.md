@@ -39,18 +39,18 @@ i.e. to extract text surrounded by two hyphens (EC1-1BB2-AC12), you'd use this f
 
 
 ### Convert Multiple Rows to Columns and Rows
-> A1: Smith, John
-> A2: 111 Pine St.
-> A3: San Diego, CA
-> A4: (555) 128-549
-> A5: Jones, Sue
-> A6: 222 Oak Ln.
-> A7: New York, NY
-> A8: (555) 238-1845
-> A9: Anderson, Tom
-> A10: 333 Cherry Ave.
-> A11: Chicago, IL
-> A12: (555) 581-4914
+> A1: Smith, John  
+> A2: 111 Pine St.  
+> A3: San Diego, CA  
+> A4: (555) 128-549  
+> A5: Jones, Sue  
+> A6: 222 Oak Ln.  
+> A7: New York, NY  
+> A8: (555) 238-1845  
+> A9: Anderson, Tom  
+> A10: 333 Cherry Ave.  
+> A11: Chicago, IL  
+> A12: (555) 581-4914  
 
 In cell C1, type:
 `=OFFSET($A$1,(ROW()-1)*4+INT((COLUMN()-3)),MOD(COLUMN()-3,1))`
