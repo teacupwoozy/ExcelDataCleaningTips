@@ -52,8 +52,8 @@ i.e. to extract text surrounded by two hyphens (EC1-1BB2-AC12), you'd use this f
 > A11: Chicago, IL  
 > A12: (555) 581-4914  
 
-In cell C1, type:
-`=OFFSET($A$1,(ROW()-1)*4+INT((COLUMN()-3)),MOD(COLUMN()-3,1))`
-then fill down to row 3.
+In cell C1, type:  
+`=OFFSET($A$1,(ROW()-1)*4+INT((COLUMN()-3)),MOD(COLUMN()-3,1))` 
+then fill down to row 3.  
 
 [Additional info](https://support.office.com/en-us/article/how-to-convert-multiple-rows-and-columns-to-columns-and-rows-in-excel-09c017ec-a151-41b0-9caf-60b01f9a4deb).
