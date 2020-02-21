@@ -57,3 +57,13 @@ In cell C1, type:
 then fill down to row 3.  
 
 [Additional info](https://support.office.com/en-us/article/how-to-convert-multiple-rows-and-columns-to-columns-and-rows-in-excel-09c017ec-a151-41b0-9caf-60b01f9a4deb).
+
+
+### Dates
+#### Extract month and year:
+In empty column:
+`=TEXT(B1,"yyyymm")` or
+`=TEXT(B1,"mm/yyyy")`, etc.
+#### Extract numeric month to written month:
+`=TEXT(B1,"mmm")`
+
