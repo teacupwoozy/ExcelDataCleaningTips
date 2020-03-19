@@ -29,7 +29,12 @@ i.e.
 ##### Extract text between two instances of a character
 `MID(cell, SEARCH("char", cell)+1, SEARCH ("char", cell, SEARCH ("char", cell)+1) - SEARCH ("char", cell)-1)`  
 i.e. to extract text surrounded by two hyphens (EC1-1BB2-AC12), you'd use this formula:  
-`=MID(A2, SEARCH("-",A2) + 1, SEARCH("-",A2,SEARCH("-",A2)+1) - SEARCH("-",A2) - 1)`  
+`=MID(A2, SEARCH("-",A2) + 1, SEARCH("-",A2,SEARCH("-",A2)+1) - SEARCH("-",A2) - 1)`
+
+#### Extract text up to particular text
+`=LEFT(K3,SEARCH(",",K3)-1)`
+This looks at this cell: `P.O. BOX 76655, 20013` and brings over all of the text up until one character before it sees the comma!
+
 
 
 ### Pivot Tables
