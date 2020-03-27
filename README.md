@@ -36,6 +36,9 @@ i.e. to extract text surrounded by two hyphens (EC1-1BB2-AC12), you'd use this f
 This looks at this cell: `P.O. BOX 76655, 20013` and brings over all of the text up until one character before it sees the comma!
 
 
+### Concatenate
+`=C2&" "&C3' 
+This combines the string from C2 and C3 together with a space between.
 
 ### Pivot Tables
 * Insert/PivotTable/OK
