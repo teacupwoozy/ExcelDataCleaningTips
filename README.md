@@ -45,6 +45,9 @@ This combines the string from C2 and C3 together with a space between.
 * Typically, add field(s) to Rows
 * Add calculation field to Values & adjust calculation as needed
 
+* Add a unique count to a pivot table:  
+When inserting pivot, click tick box "add this data to the Data Model" and this will add "distinct count" to your Value Field Settings for the variable you are counting.
+
 
 ### Convert Multiple Rows to Columns and Rows
 > A1: Smith, John  
