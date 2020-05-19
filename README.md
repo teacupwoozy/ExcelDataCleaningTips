@@ -36,6 +36,10 @@ i.e. to extract text surrounded by two hyphens (EC1-1BB2-AC12), you'd use this f
 This looks at this cell: `P.O. BOX 76655, 20013` and brings over all of the text up until one character before it sees the comma!
 
 
+### Check if a string is in a cell  
+`=ISNUMBER(SEARCH("apple",A1))`  
+This would search for the word "apple" in cell A1.  
+
 ### Concatenate
 `=C2&" "&C3' 
 This combines the string from C2 and C3 together with a space between.
