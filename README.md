@@ -35,6 +35,13 @@ i.e. to extract text surrounded by two hyphens (EC1-1BB2-AC12), you'd use this f
 `=LEFT(K3,SEARCH(",",K3)-1)`
 This looks at this cell: `P.O. BOX 76655, 20013` and brings over all of the text up until one character before it sees the comma!
 
+#### Extract number of varying length from left of string  
+First, find where to start the extraction by determining the position of the first digit with this generic formula:  
+`MIN(SEARCH({0,1,2,3,4,5,6,7,8,9},cell&"0123456789"))`  
+Then, use the RIGHT function to extract the number.  
+`=RIGHT(B2, LEN(A2)-B2+1)`  
+(Where B2 is the position of the first digit.)
+
 
 ### Check if a string is in a cell  
 `=ISNUMBER(SEARCH("apple",A1))`  
