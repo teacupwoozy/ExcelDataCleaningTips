@@ -96,5 +96,12 @@ In empty column:
 In this sample, B1 refers to the cell with the value we're trying to match. E2:E100 is the range of values we're looking in to find the matching value (this can also span multiple columns - E2:G50 - or sheets - Sheet2!B2:B50. The number 1 refers to the 1st column and FALSE tells it we're looking for an exact match, where TRUE would tell it that it has to be a close match. 
 
 
+### Searches
+#### Search a cell to see if it contains a string, then return the contents of that cell:  
+`=IF(ISNUMBER(SEARCH("District",E2)),E2,"No")`
+In this sample, E2 is the cell we're searching in for the string "District." Not an exact match; E2 can contain other letters/numbers.
+
+
+
 
 
