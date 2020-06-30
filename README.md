@@ -42,6 +42,12 @@ Then, use the RIGHT function to extract the number.
 `=RIGHT(B2, LEN(A2)-B2+1)`  
 (Where B2 is the position of the first digit.)
 
+#### Extract all but the last word in a cell (last names)
+`=LEFT(C8,FIND("*",SUBSTITUTE(C8," ","*",LEN(C8)-LEN(SUBSTITUTE(C8," ",""))))-1)`  
+
+#### Extract the last word in a cell (all but first name)  
+`=RIGHT(C2,LEN(C2)-FIND("*",SUBSTITUTE(C2," ","*",LEN(C2)-LEN(SUBSTITUTE(C2," ","")))))`  
+
 
 ### Check if a string is in a cell  
 `=ISNUMBER(SEARCH("apple",A1))`  
