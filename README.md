@@ -51,6 +51,10 @@ This would search for the word "apple" in cell A1.
 `=C2&" "&C3' 
 This combines the string from C2 and C3 together with a space between.
 
+#### Concatenate text cell with numeric cell that has leading zeros
+`=B2&TEXT(C2,REPT("0",3))`  
+In this sample B2 has text and C2 has 3 numbers with leading zeros. the "3" indicates how many of the "0" to add.  
+
 ### Pivot Tables
 * Insert/PivotTable/OK
 * Typically, add field(s) to Rows
@@ -98,7 +102,7 @@ In this sample, B1 refers to the cell with the value we're trying to match. E2:E
 
 ### Searches
 #### Search a cell to see if it contains a string, then return the contents of that cell:  
-`=IF(ISNUMBER(SEARCH("District",E2)),E2,"No")`
+`=IF(ISNUMBER(SEARCH("District",E2)),E2,"No")`  
 In this sample, E2 is the cell we're searching in for the string "District." Not an exact match; E2 can contain other letters/numbers.
 
 
