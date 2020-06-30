@@ -55,7 +55,12 @@ This would search for the word "apple" in cell A1.
 
 ### Concatenate
 `=C2&" "&C3' 
-This combines the string from C2 and C3 together with a space between.
+This combines the string from C2 and C3 together with a space between.  
+
+#### Concat with added character  
+`=CONCATENATE(A1, ", ", B1)`  
+or  
+`=A1 & ", " & B1`
 
 #### Concatenate text cell with numeric cell that has leading zeros
 `=B2&TEXT(C2,REPT("0",3))`  
