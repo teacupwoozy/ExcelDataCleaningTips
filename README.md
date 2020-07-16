@@ -117,6 +117,11 @@ In this sample, B1 refers to the cell with the value we're trying to match. E2:E
 In this sample, E2 is the cell we're searching in for the string "District." Not an exact match; E2 can contain other letters/numbers.
 
 
-
+### Hacking Medians in Pivot Tables
+#### To get medians into a pivot table  
+`{=MEDIAN(IF($B$2:$B$31=B2,$C$2:$C$31))}`  
+To get curly brackets, press Ctrl + Shift + Enter at end of formula. This tells Excel that this is an array. This is key.  
+This forumal is saying look in the range B2 - B31 and if you find a match to B2 then use the corresponding cell in C2 - C31.  
+Then, in your pivot table add your median column and change the value field settings to Average.  
 
 
