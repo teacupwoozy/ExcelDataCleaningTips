@@ -39,8 +39,11 @@ This looks at this cell: `P.O. BOX 76655, 20013` and brings over all of the text
 First, find where to start the extraction by determining the position of the first digit with this generic formula:  
 `MIN(SEARCH({0,1,2,3,4,5,6,7,8,9},cell&"0123456789"))`  
 Then, use the RIGHT function to extract the number.  
-`=RIGHT(B2, LEN(A2)-B2+1)`  
+`=RIGHT(A2, LEN(A2)-B2+1)`  
 (Where B2 is the position of the first digit.)
+
+#### Extract text before first occurance of a number  
+`=LEFT(A1,MIN(FIND({0,1,2,3,4,5,6,7,8,9},A1&"0123456789"))-1)`  
 
 #### Extract all but the last word in a cell (last names)
 `=LEFT(C8,FIND("*",SUBSTITUTE(C8," ","*",LEN(C8)-LEN(SUBSTITUTE(C8," ",""))))-1)`  
