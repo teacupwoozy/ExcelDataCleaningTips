@@ -21,6 +21,11 @@ i.e. to get the last 4 characters from the end of a string, use this formula:
 i.e. to get three characters from the middle of a string beginning with the 6th character, you use the following formula:  
 `=MID(A2,6,3)`  
 
+#### Extract text after a word  
+This is hacky  
+`=MID(A1,FIND("DISTRICT ",A1)+9,99)` 
+Where we are trying to extract everything after the word "district." +9 is the number of characters in the word we're looking for and 99 will pull out 99 characters after that word.  
+
 ##### Extract text after a specific character
 `=LEFT(A2, SEARCH("-",A2)-1)`  
 i.e.   
