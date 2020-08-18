@@ -133,3 +133,9 @@ This forumal is saying look in the range B2 - B31 and if you find a match to B2 
 Then, in your pivot table add your median column and change the value field settings to Average.  
 
 
+### Copying
+#### Pasting a list into Excel  
+Hold CTRL down when highlighting what you want to paste. Then, when you paste - it should put each item in the list in its own cell.  
+
+
+
