@@ -119,6 +119,12 @@ In empty column:
 In this sample, B1 refers to the cell with the value we're trying to match. E2:E100 is the range of values we're looking in to find the matching value (this can also span multiple columns - E2:G50 - or sheets - Sheet2!B2:B50. The number 1 refers to the 1st column and FALSE tells it we're looking for an exact match, where TRUE would tell it that it has to be a close match. 
 
 
+### MAXIFS
+#### Find the max value within defined groups of data
+`=MAXIFS(T2:T29648,R2:R29648,R2)`
+In this sample, T2:T29648 (max_range) refers to the range of cells where you want to find the max values in. R2:R29648 (criteria_range) is the range within you want to identify your sub-groups (i.e.: it will group together cells/rows where this value is the same). R2 (criteria) is the criteria I will be using to find all other matching uses within the criteria_range. You can use multiple criteria_range/criteria cases to the one formula. This was used for finding the highest vote count for each Race_ID.
+
+
 ### Searches
 #### Search a cell to see if it contains a string, then return the contents of that cell:  
 `=IF(ISNUMBER(SEARCH("District",E2)),E2,"No")`  
