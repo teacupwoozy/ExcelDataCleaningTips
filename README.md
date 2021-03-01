@@ -70,12 +70,12 @@ This combines the string from C2 and C3 together with a space between.
 or  
 `=A1 & ", " & B1`
 
-#### Check if values in two cells are the same  
-`=EXACT(T2,E2)`  
-
 #### Concatenate text cell with numeric cell that has leading zeros
 `=B2&TEXT(C2,REPT("0",3))`  
 In this sample B2 has text and C2 has 3 numbers with leading zeros. the "3" indicates how many of the "0" to add.  
+
+### Check if values in two cells are the same  
+`=EXACT(T2,E2)`  
 
 ### Pivot Tables
 * Insert/PivotTable/OK
