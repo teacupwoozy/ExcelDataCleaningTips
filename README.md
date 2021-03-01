@@ -124,8 +124,11 @@ In this sample, B1 refers to the cell with the value we're trying to match. E2:E
 
 ### MAXIFS
 #### Find the max value within defined groups of data
-`=MAXIFS(T2:T29648,R2:R29648,R2)`  
-In this sample, T2:T29648 (max_range) refers to the range of cells where you want to find the max values in. R2:R29648 (criteria_range) is the range within you want to identify your sub-groups (i.e.: it will group together cells/rows where this value is the same). R2 (criteria) is the criteria I will be using to find all other matching uses within the criteria_range. You can use multiple criteria_range/criteria cases to the one formula. This was used for finding the highest vote count for each Race_ID.
+`=MAXIFS($T$2:$T$29648,$R$2:$R$29648,R2)`  
+In this sample, T2:T29648 (max_range) refers to the range of cells where you want to find the max values in. R2:R29648 (criteria_range) is the range within you want to identify your sub-groups (i.e.: it will group together cells/rows where this value is the same). R2 (criteria) is the criteria I will be using to find all other matching uses within the criteria_range. You can use multiple criteria_range/criteria cases to the one formula. This was used for finding the highest vote count for each Race_ID.  
+You can add multiple criteria too  
+`=MAXIFS($E$2:$E$29659,$D$2:$D$29659,D2,$S$2:$S$29659,S2)`  
+This essentially would group matching items first in column D and then group matching items in column S.  
 
 
 ### Searches
