@@ -61,6 +61,16 @@ Then, use the RIGHT function to extract the number.
 `=ISNUMBER(SEARCH("apple",A1))`  
 This would search for the word "apple" in cell A1.  
 
+
+### If statements based on conditions (OR, AND)  
+Check if a cell has "this" or "that," then take a particular action. If the cells do not, then do something else.  
+`=IF(OR(B2=D2,B2>100)B2*D2,FALSE)`  
+This checks if B2 and D2 are equal, or if B2 is greater than 100. If either of these are true, then the cell will calculate B2xD2, if not it will return false. *(I have not tested this example.)*  
+
+`=IF(AND(B2=D2,B2>100)B2*D2,FALSE)`  
+For this example, both conditions would need to be true in order to multiply B2 and D2, otherwise it will return FALSE.  
+
+
 ### Concatenate
 `=C2&" "&C3' 
 This combines the string from C2 and C3 together with a space between.  
