@@ -62,6 +62,16 @@ Then, use the RIGHT function to extract the number.
 This would search for the word "apple" in cell A1.  
 
 
+### Check if a string is duplicated in a column  
+`=COUNTIF(J:J,J2)>1`  
+This would look through all of column J for repeat instances of string in J2. All duplicated cells will be marked TRUE.  
+
+
+### Check if a string is duplicated in a column without first occurance being labled  
+`=IF(COUNTIF($J$2:$J2,J2)>1,"DUP","")`  
+This would look through all of column J for repeat instances of string in J2. The first instance of a duplicated string will be blank, but all subsequent inastanced will be marked "DUP".  
+
+
 ### If statements based on conditions (OR, AND)  
 Check if a cell has "this" or "that," then take a particular action. If the cells do not, then do something else.  
 `=IF(OR(B2=D2,B2>100)B2*D2,FALSE)`  
