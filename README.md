@@ -170,4 +170,12 @@ Then, in your pivot table add your median column and change the value field sett
 Hold CTRL down when highlighting what you want to paste. Then, when you paste - it should put each item in the list in its own cell.  
 
 
+### Non-Excel hacks  
+#### Copy files names from inside a folder to paste into Excel, etc. (Windows!)  
+Open command prompt and file explorer.  
+cd into correct file location.  
+Type:  
+`dir /b > filenames.txt`  
+txt file with all file names with be located in the folder.  
+
 
